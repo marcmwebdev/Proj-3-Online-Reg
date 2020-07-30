@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+  font-family: 'merriweather', Arial, Helvetica, sans-serif;
+}
+
+/* base */
+
+
+
+  h1 {
+  display:  inline-block;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  padding: 36px;
+  background-color: #2d3945;
+  color: whitesmoke;
+  width: 100%;
+  height: auto;
+  }
+
+  #signup-div h2 {
+  display: inline-block;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+  color:  #2d3945;
+  font-weight: bold;
+}
+  #signup-div {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 24px;
+    padding-bottom: 30px;
+ }
+  #border-div {
+  border-bottom: black 6px double;
+  width: 93%;
+  margin: auto;
+ }
+
+ #contact-h2 {
+  font-size: 16px;
+  text-align: left;
+  padding: 14px;
+}
+fieldset{
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+
+.form {
+  display: flex;
+  font-size: 14px;
+  color: gray;
+  margin-left: 22px;
+  margin-bottom: 9px;
+}
+input[type=text],
+input[type=email],
+input[type=tel]
+ {
+  display: flex;
+  margin-left: 22px;
+  line-height: 2.5em;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 95%;
+  text-align: right;
+  padding-right: 8px;
+}
+.text-bground {
+  background-color: lightgray;
+}
+
+select {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 22px;
+  line-height: 2.5em;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 95%;
+  height: 2.7em;
+  padding-left: 5px;
+}
+
+#zip {
+  display: flex;
+  margin-left: 22px;
+  line-height: 2.5em;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 44%;
+  text-align: left;
+  padding-right: 8px;
+}
+#border2 {
+  margin-top: 10px;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
+  margin-left: 16px;
+  width: 90%;
+}
+
+#news-h2 {
+font-size: 18px;
+text-align: left;
+padding: 11px;
+letter-spacing: normal;
+}
+
+.news-p {display: inline-block;
+  color: gray;
+  font-size: 14px;
+  line-height: 1.4em;
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.checkbox {
+  padding: 7px;
+  margin-bottom: 24px;
+
+}
+input[type=checkbox] {
+  margin-right: 6px;
+}
+.check-label {
+  font-size: 14px;
+  color: gray;
+}
+
+.news-p2 {
+  margin-left:1px;
+  color: gray;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+input[type=radio] {
+  margin: 0px 7px 10px 8px;
+}
+
+.bottom-p {
+  margin: 25px 10px;color: gray;
+  font-size: 14px;
+  line-height: 1.4em;
+  text-align: left; 
+  width: 88%;
+}
+
+input[type=text-area] {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto;
+  
+  width: 86%;
+  height: 88px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+  button {
+    width: 80%;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto ;
+    margin-bottom: 26px;
+    background-color: yellowgreen;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  button:hover {
+      color: greenyellow;
+      background-color: black;
+      cursor: pointer;
+
+  }
+  footer {
+    color:gray;
+    margin-bottom: 200px;
+    font-size: 12px;
+    text-align: center;
+  }
+ 
