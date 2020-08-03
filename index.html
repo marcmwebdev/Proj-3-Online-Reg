@@ -24,28 +24,40 @@
 
 
   <main>
+   
       <h2 id="contact-h2">Contact Information</h2>
 
       <fieldset>
-        <div id='div1'>
+        
       <form action="index.html">
 
-        <label for="fullname" class="form">Full Name</label> 
-        <input class="text-bground" type="text" id="fullname" name="_fullname" placeholder="Required" Required>
+        <div class="input-align">
+          <label for="fullname" class="form">Full Name</label>
+          <input class="text-bground" type="text" id="fullname" name="_fullname" placeholder="Required" required>
+        </div>
         
+        <div class="input-align">
+          <label for="email" class="form">Email Address</label> 
+          <input class="text-bground" type="email" id="email" name="_email address" placeholder="Required" required>
+        </div>
        
-        <label for="email" class="form">Email</label> 
-        <input class="text-bground" type="email" id="email" name="_email address" placeholder="Required" required>
+        <div class="input-align">
+          <label for="number" class="form">Phone Number</label> 
+          <input class="text-bground" type="tel" id="number" name="_number" placeholder="Required" required>
+        </div>
        
-        <label for="number" class="form">Phone Number</label> 
-        <input class="text-bground" type="tel" id="number" name="_number" placeholder="Required" required>
-       
-        <label for="street-address" class="form">Street Address</label> 
-        <input class="text-bground" type="text" id="street-add" name="_street-add">
+        <div class="input-align">
+          <label for="street-address" class="form">Street Address</label> 
+          <input class="text-bground" type="text" id="street-add" name="_street-add" placeholder="Required" required>
+        </div>
         
-        <label for="city" class="form">City</label> 
-        <input class="text-bground" type="text" id="city" name="_city">
+        <div class="input-align">
+          <label for="city" class="form">City</label> 
+          <input class="text-bground" type="text" id="city" name="_city" placeholder="Required" required>
+        </div>
         
+        <div class="input-align">
+          <label for="state" class="form">State</label> 
         <select class="text-bground"name="state" id="state" placeholder='Choose State'>
           <optgroup label='States Available'>
           <option value="">Choose State</option>
@@ -55,12 +67,14 @@
           <option value="ny">NY</option>
         </optgroup>
         </select>
-
-        <label for="zip" class="form">Zip Code</label> 
-        <input class="text-bground"type="text" id="zip" name="_zip">
       </div>
-      </form>
+        
+      <div class="input-align">
+          <label for="zip" class="form">Zip Code</label> 
+          <input class="text-bground"type="text" id="zip" name="_zip">
+        </div>
 
+      </form>
     </fieldset>
 
     <div id='border2'></div>
@@ -69,25 +83,25 @@
     <p class="news-p">Select the newsletters you would like to recieve.</p>
 
     
+    
     <div class='checkbox'>
       
-      <input type="checkbox" id="html_news" name="html_news" value="html news">
+      <input type="checkbox" class="html_news" name="html_news" value="html news">
       <label class="check-label" for="html_news"> HTML News </label>
       <br>
       <br>
       
-      <input type="checkbox" id="html_news" name="css_news" value="css news">
-      <label class="check-label" for="css_news"> CSS News </label>
+      <input type="checkbox" class="html_news" name="css_news" value="css news">
+      <label class="ch-label check-label"  for="css_news"> CSS News </label>
       <br>
       <br>      
-      <input type="checkbox" id="html_news" name="css_news" value="javascript news">
+      <input type="checkbox" class="html_news" name="javascript_news" value="javascript news">
       <label class="check-label" for="javascript_news"> Javascript News </label>
   </div>
-
-  <di class="radio">
+  <br>
+  <div class="radio">
    <p class='news-p'>Newsletter format</p>
-    <br>
-
+  <br>
    <input type="radio" id="html" name="newsform"><label class="check-label" for="html">HTML</label>
    <br>
    <input type="radio" id="plaintext" name="newsform"><label class="check-label" for="html">Plain text</label>
@@ -102,11 +116,11 @@
   <a href="#"></a><button class="button" type='submit'>Sign up!</button>
  </div>
 
- <footer>
-  <p>Copyright The Code Review</p>
-</footer>
+</main>
 
-  </main>
+  <footer>
+    <p>Copyright The Code Review</p>
+  </footer>
   
 </body>
 

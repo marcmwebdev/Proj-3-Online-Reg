@@ -7,7 +7,73 @@
 
 /* base */
 
+input {
+  margin-left: 15px;
+}
 
+label {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  margin:0 0 7px 15px;
+  text-align: left;
+ 
+}
+
+div.checkbox label {
+  display: inline-block;
+
+}
+div.radio label {
+  display: inline-block;
+}
+
+.text-bground {
+  background-color: lightgray;
+  width: 100%;
+  margin: 0 0 10px 16px;
+  border-radius: 3px;
+  line-height: 2rem;
+
+}
+#fullname {
+  width: 100%;
+  margin: 0 0 10px 16px;
+  border-radius: 3px;
+  line-height: 2rem;
+}
+
+#email {
+  width: 100%;
+  margin: 0 0 10px 16px;
+  border-radius: 3px;
+  line-height: 2rem;
+}
+
+#number {
+  width: 100%;
+  margin: 0 0 10px 16px;
+  border-radius: 3px;
+  line-height: 2rem;
+}
+
+#street-add {
+  width: 100%;
+  border-radius: 3px;
+  line-height: 2rem;
+  margin: 0 0 10px 16px;
+}
+#city {
+  width: 100%;
+  border-radius: 3px;
+  line-height: 2rem;
+  margin: 0 0 3px 16px;
+}
+
+ #zip.text-bground {
+  width: 45%;
+  display: block;
+} 
 
   h1 {
   display:  inline-block;
@@ -54,52 +120,29 @@ fieldset{
   border: none;
 }
 
-.form {
-  display: flex;
-  font-size: 14px;
-  color: gray;
-  margin-left: 22px;
-  margin-bottom: 9px;
+main { 
+  background-color: lightgoldenrodyellow;
 }
-input[type=text],
-input[type=email],
-input[type=tel]
- {
-  display: flex;
-  margin-left: 22px;
-  line-height: 2.5em;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  width: 95%;
-  text-align: right;
-  padding-right: 8px;
+input:focus {
+  background-color: lightsteelblue;
 }
-.text-bground {
-  background-color: lightgray;
+
+input:hover {
+  background-color:lightgreen;
+  transition: 50ms;
 }
 
 select {
-  margin-top: 20px;
-  display: flex;
-  margin-left: 22px;
-  line-height: 2.5em;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  width: 95%;
-  height: 2.7em;
-  padding-left: 5px;
-}
-
-#zip {
-  display: flex;
-  margin-left: 22px;
-  line-height: 2.5em;
+  margin-top: px;
+  margin-left: 16px;
   border-radius: 3px;
   margin-bottom: 10px;
-  width: 44%;
-  text-align: left;
-  padding-right: 8px;
+  width: 95%;
+  padding-left: 5px;
+  height: 2rem;
 }
+
+
 #border2 {
   margin-top: 10px;
   border-bottom: 3px solid black;
@@ -121,16 +164,17 @@ letter-spacing: normal;
   line-height: 1.4em;
   text-align: left;
   padding: 10px 15px;
+  margin-left: 4px;
 }
 
-.checkbox {
-  padding: 7px;
-  margin-bottom: 24px;
 
-}
-input[type=checkbox] {
-  margin-right: 6px;
-}
+  
+ input[type=checkbox] label {
+   display: inline-block;
+   margin-left: 10px;
+ }
+
+
 .check-label {
   font-size: 14px;
   color: gray;
@@ -142,13 +186,17 @@ input[type=checkbox] {
   font-size: 14px;
   line-height: 1.4em;
 }
+i {
+  margin-top: 50px;
+}
 
 input[type=radio] {
-  margin: 0px 7px 10px 8px;
+  margin: 0px 7px 14px 15px;
 }
 
 .bottom-p {
-  margin: 25px 10px;color: gray;
+  margin: 25px 25px;
+  color: gray;
   font-size: 14px;
   line-height: 1.4em;
   text-align: left; 
@@ -159,9 +207,8 @@ input[type=text-area] {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  margin: auto;
-  
-  width: 86%;
+  margin: 10px auto 25px auto;
+  width: 85%;
   height: 88px;
   margin-top: -10px;
   margin-bottom: 25px;
@@ -191,7 +238,76 @@ input[type=text-area] {
   footer {
     color:gray;
     margin-bottom: 200px;
+    padding-bottom: 20px;
     font-size: 12px;
     text-align: center;
   }
  
+  @media (min-width:768px) {
+
+    main {
+      max-width: 60%;
+      display: block;
+      margin: 20px auto;
+    }
+    #contact-h2 {
+      margin-bottom: 20px;
+    }
+    label,
+    select,
+    input[type=text],
+    input[type=email],
+    input[type=tel] {
+      display: inline-block;
+      max-width: 69%;
+    }
+   fieldset { 
+     text-align: initial;
+     
+   }
+
+   #state.text-bground {
+     margin-top: inherit;
+   }
+    #zip.text-bground {
+      display:inline-block;
+    }
+    #fullname {
+      margin-left: 50px;
+    }
+    #email {
+      margin-left: 22px;
+    }
+    
+    #street-add {
+      margin-left: 19px;
+    }
+    #city {
+      margin-left: 90px;
+      margin-bottom: 10px;
+    }
+   #state {
+     margin-left: 82px;
+   }
+   #zip {
+     margin-left: 57px;
+     max-width: 30%;
+   }
+    
+   #border-div {
+     width: 60%;
+   }
+   header h2 {
+     margin-top: 38px;
+   }
+   #border2 {
+     display: block;
+     width: 95%;
+     margin: auto;
+     margin-top: 28px;
+     margin-bottom: 10px;
+   }
+
+  }
+
+  
