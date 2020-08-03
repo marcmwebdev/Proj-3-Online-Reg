@@ -139,7 +139,6 @@ input:hover {
 }
 
 select {
-  margin-top: px;
   margin-left: 16px;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -255,14 +254,17 @@ textarea {
  
        /******** 768 ********/
 
-  @media screen (min-width:768px) {
-
+  @media (min-width:768px) {
 
     
     #contact-h2 {
       margin-bottom: 20px;
     }
-
+      main {
+        width: 70%;
+        display: block;
+        margin: 20px auto;
+      }
   input {
   max-width: 50%;
 }
@@ -272,6 +274,8 @@ textarea {
     input[type=email],
     input[type=tel] {
       display: inline-block;
+      max-width: 70%;
+      margin-bottom: 34px;
     }
   
 
@@ -283,7 +287,8 @@ textarea {
     }
     #fullname {
       display: inline-block;
-      width: 20%;
+      max-width: 70%;
+      margin-left: 50px;
     }
     #email {
       margin-left: 22px;
@@ -306,7 +311,7 @@ textarea {
    }
     
    #border-div {
-     width: 60%;
+     max-width: 70%;
    }
    header h2 {
      margin-top: 38px;

@@ -31,7 +31,7 @@
         
   <form action="index.html">
 
-    <fieldset id='fld1'>
+    <fieldset>
         <div class="input-align">
           <label for="fullname" class="form">Full Name</label>
           <input class="text-bground" type="text" id="fullname" name="_fullname" placeholder="Required" required>
@@ -48,7 +48,7 @@
         </div>
        
         <div class="input-align">
-          <label for="street-address" class="form">Street Address</label> 
+          <label for="street-add" class="form">Street Address</label> 
           <input class="text-bground" type="text" id="street-add" name="_street-add" placeholder="Required" required>
         </div>
         
@@ -59,7 +59,7 @@
 
         <div class="input-align">
           <label for="state" class="form">State</label> 
-        <select class="text-bground"name="state" id="state" placeholder='Choose State'>
+        <select class="text-bground" name="state" id="state">
           <optgroup label='States Available'>
           <option value="">Choose State</option>
           <option value="ma">MA</option>
@@ -72,7 +72,7 @@
         
       <div class="input-align">
           <label for="zip" class="form">Zip Code</label> 
-          <input class="text-bground"type="text" id="zip" name="_zip">
+          <input class="text-bground" type="text" id="zip" name="_zip">
         </div>
 
       
@@ -89,16 +89,16 @@
       
       <div class='checkbox'>
         
-        <input type="checkbox" class="html_news" name="html_news" value="html news">
+        <input type="checkbox" class="html_news" name="html_news" id="html_news" value="html news">
         <label class="check-label" for="html_news"> HTML News </label>
         <br>
         <br>
         
-        <input type="checkbox" class="html_news" name="css_news" value="css news">
+        <input type="checkbox" id='css_news' class="html_news" name="css_news" value="css news">
         <label class="ch-label check-label"  for="css_news"> CSS News </label>
         <br>
         <br>      
-        <input type="checkbox" class="html_news" name="javascript_news" value="javascript news">
+        <input type="checkbox" id='javascript_news' class="html_news" name="javascript_news" value="javascript news">
         <label class="check-label" for="javascript_news"> Javascript News </label>
     </div>
     <br>
@@ -115,7 +115,7 @@
 
   <div class='bottom-section'>
     <p class="bottom-p">Other topics you might like to hear about</p>
-   <textarea name="" id="text_area" cols="30" rows="7"></textarea>
+   <textarea name="textarea" id="text_area" cols="30" rows="7"></textarea>
    <br>
  </div>
 
