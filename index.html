@@ -27,10 +27,11 @@
    
       <h2 id="contact-h2">Contact Information</h2>
 
-      <fieldset>
+     
         
-      <form action="index.html">
+  <form action="index.html">
 
+    <fieldset id='fld1'>
         <div class="input-align">
           <label for="fullname" class="form">Full Name</label>
           <input class="text-bground" type="text" id="fullname" name="_fullname" placeholder="Required" required>
@@ -55,7 +56,7 @@
           <label for="city" class="form">City</label> 
           <input class="text-bground" type="text" id="city" name="_city" placeholder="Required" required>
         </div>
-        
+
         <div class="input-align">
           <label for="state" class="form">State</label> 
         <select class="text-bground"name="state" id="state" placeholder='Choose State'>
@@ -74,42 +75,48 @@
           <input class="text-bground"type="text" id="zip" name="_zip">
         </div>
 
-      </form>
+      
     </fieldset>
 
     <div id='border2'></div>
     
-    <h2 id="news-h2">Newsletter</h2>
-    <p class="news-p">Select the newsletters you would like to recieve.</p>
+    <fieldset>
+    
+      <h2 id="news-h2">Newsletter</h2>
+      <p class="news-p">Select the newsletters you would like to recieve.</p>
 
-    
-    
-    <div class='checkbox'>
       
-      <input type="checkbox" class="html_news" name="html_news" value="html news">
-      <label class="check-label" for="html_news"> HTML News </label>
-      <br>
-      <br>
       
-      <input type="checkbox" class="html_news" name="css_news" value="css news">
-      <label class="ch-label check-label"  for="css_news"> CSS News </label>
-      <br>
-      <br>      
-      <input type="checkbox" class="html_news" name="javascript_news" value="javascript news">
-      <label class="check-label" for="javascript_news"> Javascript News </label>
-  </div>
-  <br>
-  <div class="radio">
-   <p class='news-p'>Newsletter format</p>
-  <br>
-   <input type="radio" id="html" name="newsform"><label class="check-label" for="html">HTML</label>
-   <br>
-   <input type="radio" id="plaintext" name="newsform"><label class="check-label" for="html">Plain text</label>
-  </div>
+      <div class='checkbox'>
+        
+        <input type="checkbox" class="html_news" name="html_news" value="html news">
+        <label class="check-label" for="html_news"> HTML News </label>
+        <br>
+        <br>
+        
+        <input type="checkbox" class="html_news" name="css_news" value="css news">
+        <label class="ch-label check-label"  for="css_news"> CSS News </label>
+        <br>
+        <br>      
+        <input type="checkbox" class="html_news" name="javascript_news" value="javascript news">
+        <label class="check-label" for="javascript_news"> Javascript News </label>
+    </div>
+    <br>
+    <div class="radio">
+    <p class='news-p'>Newsletter format</p>
+    <br>
+    <input type="radio" id="html" name="newsform"><label class="check-label" for="html">HTML</label>
+    <br>
+    <input type="radio" id="plaintext" name="newsform"><label class="check-label" for="html">Plain text</label>
+    </div>
+  </fieldset>
+
+</form>
 
   <div class='bottom-section'>
     <p class="bottom-p">Other topics you might like to hear about</p>
-    <input type="text-area">
+   <textarea name="" id="text_area" cols="30" rows="7"></textarea>
+   <br>
  </div>
 
  <div>

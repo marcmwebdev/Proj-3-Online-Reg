@@ -37,10 +37,15 @@ div.radio label {
 
 }
 #fullname {
-  width: 100%;
+  max-width: 100%;
   margin: 0 0 10px 16px;
   border-radius: 3px;
   line-height: 2rem;
+}
+#text_area {
+  display: block;
+  margin: auto;
+  
 }
 
 #email {
@@ -115,13 +120,14 @@ div.radio label {
   padding: 14px;
 }
 fieldset{
-  width: 90%;
-  text-align: center;
-  border: none;
+  max-width: 90%;
+ border: none;
 }
 
 main { 
   background-color: lightgoldenrodyellow;
+padding-bottom: 20px;
+border-radius: 10px;
 }
 input:focus {
   background-color: lightsteelblue;
@@ -195,7 +201,8 @@ input[type=radio] {
 }
 
 .bottom-p {
-  margin: 25px 25px;
+  display: inline-block;
+  margin: 9px 0 12px 16px;
   color: gray;
   font-size: 14px;
   line-height: 1.4em;
@@ -203,7 +210,7 @@ input[type=radio] {
   width: 88%;
 }
 
-input[type=text-area] {
+textarea {
   display: block;
   font-size: 16px;
   font-weight: 400;
@@ -235,6 +242,9 @@ input[type=text-area] {
       cursor: pointer;
 
   }
+  main {
+    margin-bottom: 20px;
+  }
   footer {
     color:gray;
     margin-bottom: 200px;
@@ -243,28 +253,27 @@ input[type=text-area] {
     text-align: center;
   }
  
-  @media (min-width:768px) {
+       /******** 768 ********/
 
-    main {
-      max-width: 60%;
-      display: block;
-      margin: 20px auto;
-    }
+  @media screen (min-width:768px) {
+
+
+    
     #contact-h2 {
       margin-bottom: 20px;
     }
+
+  input {
+  max-width: 50%;
+}
     label,
     select,
     input[type=text],
     input[type=email],
     input[type=tel] {
       display: inline-block;
-      max-width: 69%;
     }
-   fieldset { 
-     text-align: initial;
-     
-   }
+  
 
    #state.text-bground {
      margin-top: inherit;
@@ -273,7 +282,8 @@ input[type=text-area] {
       display:inline-block;
     }
     #fullname {
-      margin-left: 50px;
+      display: inline-block;
+      width: 20%;
     }
     #email {
       margin-left: 22px;
@@ -288,6 +298,7 @@ input[type=text-area] {
     }
    #state {
      margin-left: 82px;
+  
    }
    #zip {
      margin-left: 57px;
